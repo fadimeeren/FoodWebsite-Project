@@ -1,0 +1,31 @@
+// Scss Imports
+@use "./variables";
+@use "./header";
+
+// * Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap");
+
+
+
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+// * Global Styles
+body {
+  font-family: "Big Shoulders", sans-serif;
+  background-color: variables.$bg-color;
+  color: variables.$text-color;
+}
+.container {
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+}

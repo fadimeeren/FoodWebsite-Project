@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap");
+header {
+  background-color: #f2f0f1;
+  position: sticky;
+  height: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+header .container a {
+  color: #273ea1;
+}
+header .container #menu-btn {
+  font-size: 28px;
+  color: #273ea1;
+  cursor: pointer;
+  display: none;
+}
+header .container .logo {
+  font-size: 24px;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header .container nav a {
+  font-size: 20px;
+}
+header .container #basket-btn {
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+}
+header .container #basket-btn::after {
+  content: attr(data-quantity);
+  position: absolute;
+  top: 0;
+  right: -15px;
+  font-size: 13px;
+  background-color: #273ea1;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Big Shoulders", sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.container {
+  max-width: 1070px;
+  width: 100%;
+  margin: auto;
+}/*# sourceMappingURL=syle.css.map */
